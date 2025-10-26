@@ -8,7 +8,7 @@ public class Person {
                 userName.matches("^[A-Za-z0-9]+$");
     }
 
-    public static Boolean check_password(String password) {
+    public static Boolean checkPassword(String password) {
         return Objects.nonNull(password) &&
                 password.matches("^(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,}$");
     }
